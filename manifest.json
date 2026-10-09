@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "beemovie🐝",
+  "version": "2.12",
+  "description": "Расширение для комфортного просмотра фильмов и сериалов",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.kinopoisk.ru/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
